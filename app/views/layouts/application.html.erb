@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SchoolManager</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+  <!-- render header links-->
+  <%= render "layouts/shared/headers/header_links" %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+  <!-- render navbar-->
+  <%= render "layouts/shared/headers/header" %>
+  <div class="container mt-3">
+    <%= yield %>
+  </div>
+  </body>
+</html>
